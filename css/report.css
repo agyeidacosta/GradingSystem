@@ -1,0 +1,91 @@
+body{
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 18px;
+background-color: rgb(255, 255, 255);
+color: rgb(6, 48, 48);
+}
+
+
+table{
+border-collapse: collapse;
+width: 100%;
+
+}
+
+th,td{
+
+color:  rgb(0, 0, 0);
+
+}
+
+tr {
+text-align: center;
+padding: 10px;
+font-style: italic;
+font-size: bold;
+
+}
+
+ tr:nth-child(odd){
+background-color: rgb(255, 255, 255);
+color: white;
+}
+
+tr:hover{
+background-color: rgb(81, 100, 100);
+opacity:0.7px;
+color: white;
+}
+
+
+
+.report{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 15px;
+background-color: rgb(6, 48, 48); 
+color: white;
+max-width: 50%;
+margin: 35px auto ;
+border-radius: 11px;
+position: relative;
+box-shadow: 0 2px 7px rgba(0, 0, 0,0.5);
+}
+
+.report1{
+  display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 15px;
+background:transparent ;
+color: rgb(250, 252, 252);
+margin: 35px auto ;
+border-radius: 11px;
+position: absolute;
+top: 3px;
+right:220px;
+}
+
+.report1 a{
+color: rgb(180, 154, 4);
+}
+
+@media(max-width:768px){
+table{
+overflow-x: scroll;
+padding: 0 5px;
+}
+.report{
+max-width: 100%;
+padding:  0 5px;
+}
+.report1{
+top: 15px;
+right: 0;
+}
+.report1 a{
+font-size: 14px;
+}
+}
